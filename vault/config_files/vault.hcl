@@ -13,8 +13,8 @@ listener "tcp" {
 }
 seal "awskms" {
   region = "us-east-1"
-  kms_key_id = "12345678-abcd-1234-abcd-123456789101",
-  endpoint = "example.kms.us-east-1.vpce.amazonaws.com"
+  kms_key_id = "<key ARN>",
+  # (optional) endpoint = "example.kms.us-east-1.vpce.amazonaws.com"         
 }
 reporting { #only for Vault 1.14 and up
     license {
